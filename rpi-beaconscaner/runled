@@ -1,0 +1,5 @@
+sleep 10
+service bluetooth restart
+sudo hciconfig hci0 reset
+cd ~
+sudo ./ibeacon_scan -b | ./led_gos

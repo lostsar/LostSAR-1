@@ -1,0 +1,12 @@
+#!/bin/bash
+gpio mode 7 out
+#trap "gpio write 7 0" exit
+while read line
+do
+    if [[ $line = *"B89D42A5-48AF-4830-9825-499855E2E96D 30387 12345"* ]]; then
+	gpio write 7 1
+	sleep 0.5
+    fi
+	gpio write 7 0
+done
+
