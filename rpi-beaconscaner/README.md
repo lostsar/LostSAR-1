@@ -43,7 +43,7 @@ boot中 nano wpa_supplicant.conf
 
 參考 (可設定多個wifi ap)
 
-‘’’sh
+‘’’ sh
 
 country=CN
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -65,6 +65,7 @@ scan_ssid=1
 }
 
 ‘’’
+
 ---
 
 # 記錄 1s電池可用多久時間 log
