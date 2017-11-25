@@ -31,10 +31,15 @@ pin39接升壓板上usb v-
 ---
 # raspberry pi安裝
 由raspberry.org 下載img後安裝到sd card
+
 因pi zero w沒有rj45 port
+
 直接在sd card
+
 boot中 touch ssh (打開ssh 服務)
+
 boot中 nano wpa_supplicant.conf
+
 
 參考 (可設定多個wifi ap)
 country=CN
