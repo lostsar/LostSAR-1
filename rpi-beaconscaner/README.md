@@ -88,12 +88,18 @@ log "10min log data - $(date)"
 #
 ibeacon_scan
 #iBeacon Scan by Radius Networks
+
 ledgos
 #過濾beacon uuid用
+
 runled
 #放到crontab or /etc/rc.local
 
+
 # 重點
 需安裝藍芽及相關。。。
+
 sudo apt-get install bluez bluez-hcidump -y
 sudo apt-get install bc
+
+—-
