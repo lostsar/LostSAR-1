@@ -48,14 +48,14 @@ boot中 nano wpa_supplicant.conf
 > country=CN
 > ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
- 
+> 
 > network={
 >ssid="WiFi-A"
 >psk="12345678"
 > key_mgmt=WPA-PSK
 > priority=1
 > }
- 
+>
 >network={
 > ssid="WiFi-B"
 > psk="12345678"
@@ -70,33 +70,33 @@ update_config=1
 
 # 記錄 1s電池可用多久時間 log
 
-crontab -e
+> crontab -e
+>
+>
+> @reboot /bin/sh /root/log.sh
 
-‘’’sh
-@reboot /bin/sh /root/log.sh
-
-nano /root/log.sh
-LOGFILE=/log/$(date +%Y-%m-%d).txt
-log(){
-    message="$@"
-    echo $message
-    echo $message >>$LOGFILE
-}
-log "open system $(date)"
+> nano /root/log.sh
+> LOGFILE=/log/$(date +%Y-%m-%d).txt
+> log(){
+>    message="$@"
+>    echo $message
+>    echo $message >>$LOGFILE
+> }
+> log "open system $(date)"
 
 ---
-crontab -e
-*/10 * * * * /bin/sh /root/10minlog.sh
-
-nano /root/10minlog.sh
-
-LOGFILE=/log/10min/10-$(date +%Y-%m-%d).txt
-log(){
-    message="$@"
-    echo $message
-    echo $message >>$LOGFILE
-}
-log "10min log data - $(date)"
+> crontab -e
+> */10 * * * * /bin/sh /root/10minlog.sh
+>
+> nano /root/10minlog.sh
+>
+> LOGFILE=/log/10min/10-$(date +%Y-%m-%d).txt
+> log(){
+>    message="$@"
+>    echo $message
+>    echo $message >>$LOGFILE
+> }
+> log "10min log data - $(date)"
 
 ---
 
