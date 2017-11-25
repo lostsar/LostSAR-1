@@ -4,7 +4,9 @@
 ---
 # 需求
 raspberry pi zero w x1
+
 3.7v轉5v升壓板 x1
+
 3.7v 1s錐聚電池 x1
 
 ---
