@@ -43,7 +43,7 @@ boot中 nano wpa_supplicant.conf
 
 參考 (可設定多個wifi ap)
 
-‘’’ sh
+    
 
 country=CN
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -64,7 +64,7 @@ priority=2
 scan_ssid=1
 }
 
-‘’’
+    
 
 ---
 
