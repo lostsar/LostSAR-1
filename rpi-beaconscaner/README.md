@@ -64,6 +64,7 @@ priority=2
 scan_ssid=1
 }
 
+‘’’
 ---
 
 # 記錄 1s電池可用多久時間 log
