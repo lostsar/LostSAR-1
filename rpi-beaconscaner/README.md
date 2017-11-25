@@ -100,6 +100,7 @@ runled
 需安裝藍芽及相關。。。
 
 sudo apt-get install bluez bluez-hcidump -y
+
 sudo apt-get install bc
 
 —-
