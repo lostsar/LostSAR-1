@@ -1,19 +1,22 @@
+
 ##利用raspberry pi 來掃描beacon
 
-需求
+---
+#需求
 raspberry pi zero w x1
 3.7v轉5v升壓板 x1
 3.7v 1s錐聚電池 x1
 
-
-使用腳位
+---
+#使用腳位
 pin7 and pin6 (gpio4 and gnd)
 
 pin10 and pin14 (gpio15 and gnd)
 
 pin2 and pin39 (5v and gnd)
 
-電路接法
+---
+#電路接法
 pin7先接120歐姆在接led正極
 pin6接led負極
 
@@ -23,7 +26,8 @@ pin14接led負
 pin2 接升壓板上usb v+
 pin39接升壓板上usb v-
 
-raspberry pi安裝
+---
+#raspberry pi安裝
 由raspberry.org 下載img後安裝到sd card
 因pi zero w沒有rj45 port
 直接在sd card
@@ -49,7 +53,6 @@ key_mgmt=WPA-PSK
 priority=2
 scan_ssid=1
 }
-
 
 ---
 
@@ -90,7 +93,7 @@ ledgos
 runled
 #放到crontab or /etc/rc.local
 
-重點
+#重點
 需安裝藍芽及相關。。。
 sudo apt-get install bluez bluez-hcidump -y
 sudo apt-get install bc
