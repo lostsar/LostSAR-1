@@ -42,6 +42,9 @@ boot中 nano wpa_supplicant.conf
 
 
 參考 (可設定多個wifi ap)
+
+‘’’sh
+
 country=CN
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -64,7 +67,10 @@ scan_ssid=1
 ---
 
 # 記錄 1s電池可用多久時間 log
+
 crontab -e
+
+‘’’sh
 @reboot /bin/sh /root/log.sh
 
 nano /root/log.sh
